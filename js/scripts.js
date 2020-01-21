@@ -21,8 +21,8 @@
 // });
 
 $(document).ready(function() {
-  $("#blanks form").submit(function(event) {
-    var blanks = ["person1Input", "person2Input", "animalInput", "exclamationInput", "verbInput", "nounInput"];
+  $("#formOne").submit(function(event) {
+    var blanks = ["person1", "person2", "animal", "exclamation", "verb", "noun"];
 
     blanks.forEach(function(blank) {
       var userInput = $("input#" + blank).val();
